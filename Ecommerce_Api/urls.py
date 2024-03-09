@@ -44,7 +44,7 @@ schema_view = get_schema_view(
 openapi.Info(
       title="Ecommerce_API",
       default_version='v1',
-      description="Test description",
+      description="For the Cap Stone Project of ecomeerce store",
       terms_of_service="https://www.google.com/policies/terms/",
       #contact=openapi.Contact(email="contact@snippets.local"),
       #license=openapi.License(name="BSD License"),
