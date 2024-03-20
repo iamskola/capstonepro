@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -152,7 +152,7 @@ REST_FRAMEWORK= {
  'rest_framework.authentication.SessionAuthentication'
  ],
  'DEFAULT_PERMISSION_CLASSES': [
- 'rest_framework.permissions.IsAuthenticated'] 
+ 'rest_framework.permissions.IsAuthenticated']
  }
 
 
@@ -164,16 +164,16 @@ DJOSER = {
     'SEND_CONFIRMATION_EMAIL': True,
     'USER_CREATE_PASSWORD_RETYPE':True,
     #'LOGIN_FIELD': 'email',
-    'SERIALIZERS': {}
+    'SERIALIZERS': {},
     }
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT=BASE_DIR/'staticfiles'
-MEDIA_URL='media/'
+MEDIA_URL='/media/'
 
 MEDIA_ROOT=BASE_DIR/'mediafiles'
 
